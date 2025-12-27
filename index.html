@@ -631,16 +631,30 @@
                 font-size: 1.8rem;
             }
         }
-        @media (max-width: 480px) {
+@media (max-width: 480px) {
   .hero-actions {
     flex-direction: column;
     align-items: stretch;
+    gap: 10px; /* tighter spacing */
+    margin-top: 20px;
   }
 
   .hero-actions .btn {
     width: 100%;
+    padding: 14px 0; /* better touch target */
+    font-size: 1rem;
   }
 }
+@media (max-width: 480px) {
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+}
+
 
     </style>
 </head>
