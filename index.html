@@ -268,7 +268,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 50px;
-            align-items: center;
+            align-items: flex-start;
         }
         
         .skills-container {
@@ -287,74 +287,132 @@
             color: var(--secondary-color);
         }
         
-        .certifications {
-            margin-top: 40px;
+        /* Certifications & Awards Section */
+        .certs-awards-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-top: 30px;
         }
         
-        .cert-item {
+        .cert-award-item {
             background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: var(--border-radius);
-            margin-bottom: 15px;
-            border-left: 4px solid var(--primary-color);
-        }
-        
-        /* Experience Section */
-        .timeline {
-            position: relative;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .timeline:before {
-            content: '';
-            position: absolute;
-            left: 50%;
-            top: 0;
-            bottom: 0;
-            width: 2px;
-            background-color: #e0e0e0;
-            transform: translateX(-50%);
-        }
-        
-        .timeline-item {
-            display: flex;
-            margin-bottom: 40px;
-        }
-        
-        .timeline-item:nth-child(odd) {
-            flex-direction: row-reverse;
-        }
-        
-        .timeline-content {
-            width: 45%;
             padding: 25px;
-            background-color: white;
             border-radius: var(--border-radius);
+            border-left: 4px solid var(--primary-color);
+            transition: var(--transition);
+        }
+        
+        .cert-award-item:hover {
+            transform: translateY(-5px);
             box-shadow: var(--shadow);
         }
         
-        .timeline-date {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 10%;
-            font-weight: 600;
-            color: var(--primary-color);
+        .cert-award-item.award {
+            border-left-color: #ffc107;
         }
         
-        .timeline-content ul {
-            padding-left: 20px;
-            margin-top: 10px;
-        }
-        
-        .timeline-content li {
+        .cert-award-item h4 {
+            color: var(--secondary-color);
             margin-bottom: 8px;
+        }
+        
+        .cert-award-item .date {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        /* Experience Section - FIXED */
+        .experience-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .experience-item {
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+            border-top: 4px solid var(--primary-color);
+        }
+        
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .experience-title h3 {
+            margin-bottom: 5px;
         }
         
         .company {
             color: var(--primary-color);
             font-weight: 600;
+            font-size: 1.2rem;
+        }
+        
+        .experience-date {
+            background-color: #e9f5fe;
+            color: var(--primary-color);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        .achievement-list {
+            padding-left: 20px;
+            margin-top: 15px;
+        }
+        
+        .achievement-list li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 10px;
+        }
+        
+        .achievement-list li:before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .achievement-stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        .stat-item {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: var(--border-radius);
+            min-width: 180px;
+            flex: 1;
+        }
+        
+        .stat-value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-light);
         }
         
         /* Projects Section */
@@ -392,30 +450,6 @@
             flex-wrap: wrap;
             gap: 10px;
             margin: 15px 0;
-        }
-        
-        /* Achievements Section */
-        .achievement-card {
-            background-color: white;
-            border-radius: var(--border-radius);
-            padding: 30px;
-            box-shadow: var(--shadow);
-            text-align: center;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-        
-        .achievement-icon {
-            width: 70px;
-            height: 70px;
-            background-color: #e9f5fe;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
-            color: var(--primary-color);
-            font-size: 1.8rem;
         }
         
         /* Contact Section */
@@ -526,26 +560,21 @@
                 padding-top: 120px;
             }
             
-            .timeline:before {
-                left: 30px;
-            }
-            
-            .timeline-item {
-                flex-direction: row !important;
-            }
-            
-            .timeline-date {
-                width: 60px;
-                justify-content: flex-start;
-                padding-right: 20px;
-            }
-            
-            .timeline-content {
-                width: calc(100% - 80px);
-            }
-            
             .projects-grid {
                 grid-template-columns: 1fr;
+            }
+            
+            .experience-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .achievement-stats {
+                flex-direction: column;
+            }
+            
+            .stat-item {
+                min-width: 100%;
             }
         }
         
@@ -595,6 +624,10 @@
                 flex-direction: column;
                 gap: 15px;
             }
+            
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
         }
     </style>
 </head>
@@ -609,7 +642,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#certs-awards">Certifications & Awards</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <button class="mobile-menu-btn">
@@ -722,15 +755,24 @@
                         <p><strong>Aug 2016 — Jun 2020</strong></p>
                     </div>
                     
-                    <div class="certifications">
-                        <h3>Certifications</h3>
-                        <div class="cert-item">
-                            <h4>Certification of Capability in Business Analysis (CCBA®)</h4>
-                            <p>International Institute of Business Analysis (IIBA) · Dec 2025</p>
-                        </div>
-                        <div class="cert-item">
-                            <h4>CBAP® Certification Training</h4>
-                            <p>CBAP preparation program – Simplilearn · Dec 2025</p>
+                    <div id="certs-awards">
+                        <h3>Certifications & Awards</h3>
+                        <div class="certs-awards-container">
+                            <div class="cert-award-item">
+                                <h4>Certification of Capability in Business Analysis (CCBA®)</h4>
+                                <span class="date">International Institute of Business Analysis (IIBA) · Dec 2025</span>
+                                <p>Professional certification demonstrating expertise in business analysis practices and principles.</p>
+                            </div>
+                            <div class="cert-award-item">
+                                <h4>CBAP® Certification Training</h4>
+                                <span class="date">CBAP preparation program – Simplilearn · Dec 2025</span>
+                                <p>Comprehensive training program for Certified Business Analysis Professional certification.</p>
+                            </div>
+                            <div class="cert-award-item award">
+                                <h4>Employee Of The Month</h4>
+                                <span class="date">ANR Software Pvt. Ltd.</span>
+                                <p>Awarded for leading end-to-end onboarding of the Carrols client from initiation to pilot and production, resulting in significant client satisfaction and operational improvements.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -738,30 +780,52 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
+    <!-- Experience Section - FIXED UI -->
     <section id="experience" style="background-color: #f9f9f9;">
         <div class="container">
             <div class="section-title">
                 <h2>Work Experience</h2>
             </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">2020 - Present</div>
-                    <div class="timeline-content">
-                        <h3>Business Analyst</h3>
-                        <h4 class="company">ANR Software Pvt. Ltd.</h4>
-                        <ul>
-                            <li>Led end-to-end requirement gathering, impact analysis, BRD/FRD documentation, and functional design for ERP and mobile products</li>
-                            <li>Conducted UAT, regression, integration testing, and defect triage to improve product stability and release quality</li>
-                            <li>Executed product performance and behavioral analysis using SQL and Power BI to support data-driven decisions</li>
-                            <li>Facilitated Agile ceremonies and served as Scrum Master during transition to Scrum, improving delivery velocity</li>
-                            <li>Managed stakeholder discussions, scope alignment, change requests, feature prioritization, and cross-team communication</li>
-                            <li>Redesigned ERP modules and supported rollout across <span class="highlight">2,500+ restaurant locations</span>, improving usability and adoption</li>
-                            <li>Delivered app analytics insights (downloads, churn, usage, feedback) that drove a <span class="highlight">100% increase in app downloads</span></li>
-                            <li>Strengthened Mobile Notification API strategy, boosting <span class="highlight">user engagement by 20%</span></li>
-                            <li>Led requirements and solution design for the Carrols initiative, increasing <span class="highlight">operational efficiency by 25%</span></li>
-                            <li>Achieved a <span class="highlight">98% defect detection rate</span>, reducing post-release issues by 20%</li>
-                        </ul>
+            <div class="experience-content">
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="experience-title">
+                            <h3>Business Analyst</h3>
+                            <div class="company">ANR Software Pvt. Ltd.</div>
+                        </div>
+                        <div class="experience-date">2020 - Present</div>
+                    </div>
+                    
+                    <ul class="achievement-list">
+                        <li>Led end-to-end requirement gathering, impact analysis, BRD/FRD documentation, and functional design for ERP and mobile products</li>
+                        <li>Conducted UAT, regression, integration testing, and defect triage to improve product stability and release quality</li>
+                        <li>Executed product performance and behavioral analysis using SQL and Power BI to support data-driven decisions</li>
+                        <li>Facilitated Agile ceremonies and served as Scrum Master during transition to Scrum, improving delivery velocity</li>
+                        <li>Managed stakeholder discussions, scope alignment, change requests, feature prioritization, and cross-team communication</li>
+                        <li>Redesigned ERP modules and supported rollout across <span class="highlight">2,500+ restaurant locations</span>, improving usability and adoption</li>
+                        <li>Delivered app analytics insights (downloads, churn, usage, feedback) that drove a <span class="highlight">100% increase in app downloads</span></li>
+                        <li>Strengthened Mobile Notification API strategy, boosting <span class="highlight">user engagement by 20%</span></li>
+                        <li>Led requirements and solution design for the Carrols initiative, increasing <span class="highlight">operational efficiency by 25%</span></li>
+                        <li>Achieved a <span class="highlight">98% defect detection rate</span>, reducing post-release issues by 20%</li>
+                    </ul>
+                    
+                    <div class="achievement-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">2,500+</span>
+                            <span class="stat-label">Restaurant Locations</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">100%</span>
+                            <span class="stat-label">App Download Increase</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">25%</span>
+                            <span class="stat-label">Operational Efficiency</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">98%</span>
+                            <span class="stat-label">Defect Detection Rate</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -833,30 +897,8 @@
         </div>
     </section>
 
-    <!-- Achievements Section -->
-    <section id="achievements" style="background-color: #f9f9f9;">
-        <div class="container">
-            <div class="section-title">
-                <h2>Awards & Achievements</h2>
-            </div>
-            <div class="achievement-card">
-                <div class="achievement-icon">
-                    <i class="fas fa-award"></i>
-                </div>
-                <h3>Employee Of The Month</h3>
-                <h4>ANR Software Pvt. Ltd.</h4>
-                <p>Awarded for leading end-to-end onboarding of the Carrols client from initiation to pilot and production, resulting in significant client satisfaction and operational improvements.</p>
-                <div style="margin-top: 20px;">
-                    <span class="badge">Leadership</span>
-                    <span class="badge">Client Management</span>
-                    <span class="badge">Project Delivery</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" style="background-color: #f9f9f9;">
         <div class="container">
             <div class="section-title">
                 <h2>Contact Me</h2>
@@ -995,11 +1037,4 @@
         window.addEventListener('scroll', () => {
             const header = document.querySelector('header');
             if (window.scrollY > 100) {
-                header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
-            } else {
-                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
-            }
-        });
-    </script>
-</body>
-</html>
+                header.style.boxShadow = '0 5px 20
