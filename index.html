@@ -1,230 +1,1005 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Shriram Sharma | Senior Business Analyst – ERP, Data & Product</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Senior Business Analyst with 5+ years experience delivering ERP, POS, and data-driven products for enterprise restaurant brands." />
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <style>
-    :root {
-      --bg: #020617;
-      --border: #1f2937;
-      --text: #e5e7eb;
-      --muted: #9ca3af;
-      --accent: #38bdf8;
-      --accent-soft: rgba(56,189,248,0.15);
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: 'Inter', system-ui, sans-serif;
-      background: radial-gradient(1200px 600px at 10% -10%, #0f172a, #020617);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 96px 24px;
-    }
-
-    h1 { font-size: 48px; margin: 0 0 16px; }
-    h2 {
-      font-size: 30px;
-      margin-top: 96px;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 14px;
-    }
-    h3 { font-size: 18px; margin-top: 0; }
-
-    p { color: var(--muted); }
-
-    .hero p { max-width: 820px; font-size: 18px; }
-
-    .meta {
-      margin-top: 28px;
-      font-size: 14px;
-    }
-
-    .meta a {
-      color: var(--accent);
-      text-decoration: none;
-      margin-right: 18px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 28px;
-      margin-top: 36px;
-    }
-
-    .card {
-      background: #020617;
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 28px;
-      transition: transform .25s ease, border .25s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-6px);
-      border-color: var(--accent);
-    }
-
-    ul { padding-left: 18px; color: var(--muted); }
-    li { margin-bottom: 8px; }
-
-    .tag {
-      display: inline-block;
-      padding: 6px 14px;
-      font-size: 12px;
-      border-radius: 999px;
-      background: var(--accent-soft);
-      color: var(--accent);
-      margin: 6px 8px 0 0;
-    }
-
-    footer {
-      margin-top: 140px;
-      text-align: center;
-      font-size: 13px;
-      color: var(--muted);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shriram Sharma | Business Analyst Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-color: #0077b5; /* LinkedIn Blue */
+            --secondary-color: #2d3e50;
+            --accent-color: #00a0dc;
+            --light-color: #f5f5f5;
+            --dark-color: #191919;
+            --text-color: #333;
+            --text-light: #666;
+            --transition: all 0.3s ease;
+            --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            --border-radius: 8px;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #fff;
+        }
+        
+        h1, h2, h3, h4, h5 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+        }
+        
+        h2 {
+            font-size: 2.2rem;
+            color: var(--secondary-color);
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        h2:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary-color);
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+        }
+        
+        a {
+            text-decoration: none;
+            color: var(--primary-color);
+            transition: var(--transition);
+        }
+        
+        a:hover {
+            color: var(--accent-color);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            font-size: 1rem;
+        }
+        
+        .btn:hover {
+            background-color: var(--accent-color);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: var(--shadow);
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+        }
+        
+        .highlight {
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+        
+        .badge {
+            display: inline-block;
+            background-color: #e9f5fe;
+            color: var(--primary-color);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+        
+        /* Header & Navigation */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+        }
+        
+        .logo span {
+            color: var(--primary-color);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            color: var(--secondary-color);
+            font-weight: 500;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding-top: 150px;
+            background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .hero-text h1 {
+            margin-bottom: 15px;
+        }
+        
+        .hero-text .title {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .hero-text p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 30px;
+        }
+        
+        .hero-image {
+            text-align: center;
+        }
+        
+        .profile-img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+        }
+        
+        .hero-btns {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .contact-info-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        .contact-info-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .skill-category {
+            margin-bottom: 25px;
+        }
+        
+        .skill-category h4 {
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+        }
+        
+        .certifications {
+            margin-top: 40px;
+        }
+        
+        .cert-item {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: var(--border-radius);
+            margin-bottom: 15px;
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        /* Experience Section */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #e0e0e0;
+            transform: translateX(-50%);
+        }
+        
+        .timeline-item {
+            display: flex;
+            margin-bottom: 40px;
+        }
+        
+        .timeline-item:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+        
+        .timeline-content {
+            width: 45%;
+            padding: 25px;
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+        
+        .timeline-date {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 10%;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        .timeline-content ul {
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+        
+        .timeline-content li {
+            margin-bottom: 8px;
+        }
+        
+        .company {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .project-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .project-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .project-info {
+            padding: 25px;
+        }
+        
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        
+        /* Achievements Section */
+        .achievement-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .achievement-icon {
+            width: 70px;
+            height: 70px;
+            background-color: #e9f5fe;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: var(--primary-color);
+            font-size: 1.8rem;
+        }
+        
+        /* Contact Section */
+        .contact-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background-color: #e9f5fe;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: var(--border-radius);
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        .contact-form textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            transition: var(--transition);
+        }
+        
+        .social-link:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-5px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.4rem;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            .hero-content, .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero {
+                padding-top: 120px;
+            }
+            
+            .timeline:before {
+                left: 30px;
+            }
+            
+            .timeline-item {
+                flex-direction: row !important;
+            }
+            
+            .timeline-date {
+                width: 60px;
+                justify-content: flex-start;
+                padding-right: 20px;
+            }
+            
+            .timeline-content {
+                width: calc(100% - 80px);
+            }
+            
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background-color: white;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0;
+                box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: var(--transition);
+            }
+            
+            .nav-links.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+            
+            .nav-links li {
+                margin: 15px 0;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero-btns {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+                gap: 30px;
+                text-align: center;
+            }
+            
+            .contact-info-bar {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
 </head>
-
 <body>
-<div class="container">
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Shriram<span>Sharma</span></a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>Shriram Sharma</h1>
-    <p><strong>Senior Business Analyst · ERP · POS · Data & Product</strong></p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Shriram <span class="highlight">Sharma</span></h1>
+                    <div class="title">Business Analyst | ERP & Mobile Solutions Specialist</div>
+                    <p>Business Analyst with <span class="highlight">5+ years</span> of experience delivering ERP and mobile-based solutions in the restaurant and retail domain. Skilled in requirements analysis, process optimization, UI/UX revamps, API validation, data analysis, and stakeholder collaboration.</p>
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn">View My Projects</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+                    <div class="contact-info-bar">
+                        <div class="contact-info-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 8107562302</span>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>ramvyas6220@gmail.com</span>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>India</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://shriramsharmaba.github.io/assets/portfolioImage.png" alt="Shriram Sharma" class="profile-img">
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <p>
-      Senior Business Analyst with 5+ years of experience owning ERP and mobile product delivery
-      for enterprise restaurant and retail brands. I translate business problems into scalable
-      system designs, lead cross-functional execution, and drive measurable outcomes across
-      labor, compliance, and operational efficiency.
-    </p>
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <div>
+                    <p>I'm a Business Analyst specializing in <span class="highlight">ERP and mobile-based solutions</span> for the restaurant and retail industries. With expertise in requirements analysis, process optimization, and data-driven decision-making, I've successfully delivered solutions that improve operational efficiency and user engagement.</p>
+                    <p>My technical background in <span class="highlight">SQL, Power BI, and API testing</span> enables me to bridge the gap between business needs and technical implementation effectively.</p>
+                    
+                    <div class="skills-container">
+                        <div class="skill-category">
+                            <h4>Business Analysis</h4>
+                            <div>
+                                <span class="badge">Requirements Gathering</span>
+                                <span class="badge">BRD/FRD Creation</span>
+                                <span class="badge">Use Cases</span>
+                                <span class="badge">Gap Analysis</span>
+                                <span class="badge">Process Mapping</span>
+                                <span class="badge">Stakeholder Management</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Data & Testing</h4>
+                            <div>
+                                <span class="badge">SQL</span>
+                                <span class="badge">Power BI</span>
+                                <span class="badge">A/B Testing</span>
+                                <span class="badge">UAT</span>
+                                <span class="badge">Integration Testing</span>
+                                <span class="badge">API Testing</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Product & Delivery</h4>
+                            <div>
+                                <span class="badge">Agile/Scrum</span>
+                                <span class="badge">Sprint Planning</span>
+                                <span class="badge">Wireframing</span>
+                                <span class="badge">UML/ERD</span>
+                                <span class="badge">Release Management</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Tools & Technologies</h4>
+                            <div>
+                                <span class="badge">JIRA</span>
+                                <span class="badge">Figma</span>
+                                <span class="badge">Trello</span>
+                                <span class="badge">Mantis</span>
+                                <span class="badge">MS Office</span>
+                                <span class="badge">Power BI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3>Education</h3>
+                    <div style="background-color: #f9f9f9; padding: 20px; border-radius: var(--border-radius); margin-bottom: 30px;">
+                        <h4>B.Tech. in Computer Science and Engineering</h4>
+                        <p>Amity University Rajasthan, Jaipur</p>
+                        <p><strong>Aug 2016 — Jun 2020</strong></p>
+                    </div>
+                    
+                    <div class="certifications">
+                        <h3>Certifications</h3>
+                        <div class="cert-item">
+                            <h4>Certification of Capability in Business Analysis (CCBA®)</h4>
+                            <p>International Institute of Business Analysis (IIBA) · Dec 2025</p>
+                        </div>
+                        <div class="cert-item">
+                            <h4>CBAP® Certification Training</h4>
+                            <p>CBAP preparation program – Simplilearn · Dec 2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="meta">
-      📍 Jaipur, India |
-      <a href="mailto:ramvyas6220@gmail.com">Email</a>
-      <a href="assets/Shriram_BA_Resume_2025.pdf" target="_blank">Resume (PDF)</a>
-      <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-    </div>
-  </section>
+    <!-- Experience Section -->
+    <section id="experience" style="background-color: #f9f9f9;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Work Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2020 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Business Analyst</h3>
+                        <h4 class="company">ANR Software Pvt. Ltd.</h4>
+                        <ul>
+                            <li>Led end-to-end requirement gathering, impact analysis, BRD/FRD documentation, and functional design for ERP and mobile products</li>
+                            <li>Conducted UAT, regression, integration testing, and defect triage to improve product stability and release quality</li>
+                            <li>Executed product performance and behavioral analysis using SQL and Power BI to support data-driven decisions</li>
+                            <li>Facilitated Agile ceremonies and served as Scrum Master during transition to Scrum, improving delivery velocity</li>
+                            <li>Managed stakeholder discussions, scope alignment, change requests, feature prioritization, and cross-team communication</li>
+                            <li>Redesigned ERP modules and supported rollout across <span class="highlight">2,500+ restaurant locations</span>, improving usability and adoption</li>
+                            <li>Delivered app analytics insights (downloads, churn, usage, feedback) that drove a <span class="highlight">100% increase in app downloads</span></li>
+                            <li>Strengthened Mobile Notification API strategy, boosting <span class="highlight">user engagement by 20%</span></li>
+                            <li>Led requirements and solution design for the Carrols initiative, increasing <span class="highlight">operational efficiency by 25%</span></li>
+                            <li>Achieved a <span class="highlight">98% defect detection rate</span>, reducing post-release issues by 20%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- CORE EXPERTISE -->
-  <section>
-    <h2>Core Expertise</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Business & Product Analysis</h3>
-        <p>End-to-end ownership of BRD/FRD, GAP analysis, use cases, and process mapping to reduce
-        operational risk and improve product adoption.</p>
-      </div>
-      <div class="card">
-        <h3>Data, APIs & Validation</h3>
-        <p>SQL analysis, Power BI dashboards, API validation, UAT, integration and regression testing
-        to support data-driven decisions.</p>
-      </div>
-      <div class="card">
-        <h3>Delivery & Stakeholders</h3>
-        <p>Agile/Scrum delivery, sprint planning, release readiness, and cross-functional alignment
-        across product, engineering, QA, and clients.</p>
-      </div>
-    </div>
-  </section>
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>Key Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1554679665-f5537f187268?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="eRS Project" class="project-img">
+                    <div class="project-info">
+                        <h3>eRS (Electronic Restaurant Services)</h3>
+                        <p>Led requirements, solution design, and deployment for Labor, HR, and Sales modules across <span class="highlight">1,000+ Chipotle & JITB stores</span>.</p>
+                        <ul style="padding-left: 20px; margin: 15px 0;">
+                            <li>Improved deployment cycle with structured manual, integration, and regression testing</li>
+                            <li>Created mockups, SOWs, and stakeholder updates for seamless change management</li>
+                            <li>Enhanced system performance and user adoption through optimized workflows</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="badge">ERP Solutions</span>
+                            <span class="badge">Requirements Analysis</span>
+                            <span class="badge">Integration Testing</span>
+                            <span class="badge">Stakeholder Management</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Carrols Project" class="project-img">
+                    <div class="project-info">
+                        <h3>Carrols Restaurant Group Initiative</h3>
+                        <p>Led end-to-end onboarding and requirements alignment that elevated <span class="highlight">customer satisfaction by 25%</span>.</p>
+                        <ul style="padding-left: 20px; margin: 15px 0;">
+                            <li>Executed targeted testing achieving <span class="highlight">98% defect detection rate</span></li>
+                            <li>Enabled smoother post-implementation performance through comprehensive validation</li>
+                            <li>Managed client expectations and delivered solutions exceeding business requirements</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="badge">Client Onboarding</span>
+                            <span class="badge">Quality Assurance</span>
+                            <span class="badge">Process Optimization</span>
+                            <span class="badge">Performance Analysis</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Mobile Solutions" class="project-img">
+                    <div class="project-info">
+                        <h3>Mobile Engagement & Analytics</h3>
+                        <p>Delivered comprehensive app analytics insights that drove a <span class="highlight">100% increase in app downloads</span> and boosted user engagement by 20%.</p>
+                        <ul style="padding-left: 20px; margin: 15px 0;">
+                            <li>Strengthened Mobile Notification API strategy to enhance user retention</li>
+                            <li>Analyzed user behavior, churn rates, and feedback for continuous improvement</li>
+                            <li>Implemented data-driven recommendations for feature enhancements</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="badge">Mobile Analytics</span>
+                            <span class="badge">API Strategy</span>
+                            <span class="badge">User Engagement</span>
+                            <span class="badge">Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- CASE STUDIES -->
-  <section>
-    <h2>Selected Case Studies</h2>
+    <!-- Achievements Section -->
+    <section id="achievements" style="background-color: #f9f9f9;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Awards & Achievements</h2>
+            </div>
+            <div class="achievement-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <h3>Employee Of The Month</h3>
+                <h4>ANR Software Pvt. Ltd.</h4>
+                <p>Awarded for leading end-to-end onboarding of the Carrols client from initiation to pilot and production, resulting in significant client satisfaction and operational improvements.</p>
+                <div style="margin-top: 20px;">
+                    <span class="badge">Leadership</span>
+                    <span class="badge">Client Management</span>
+                    <span class="badge">Project Delivery</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="card">
-      <h3>Labor Cost Leakage Reduction — ERP & Time & Attendance</h3>
-      <p><strong>Role:</strong> Lead Business Analyst (requirements, KPIs, UAT)</p>
-      <p>
-        Designed a preventive labor control framework addressing early clock-ins, late clock-outs,
-        punch edits, and meal-break compliance for multi-location restaurant operators.
-      </p>
-      <ul>
-        <li>3–6% reduction in overall labor cost</li>
-        <li>40% reduction in manager punch edits</li>
-        <li>Real-time compliance and exception visibility</li>
-      </ul>
-      <span class="tag">ERP</span>
-      <span class="tag">Labor Compliance</span>
-      <span class="tag">Process Optimization</span>
-    </div>
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Me</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm open to discussing new opportunities, collaborations, or sharing insights about business analysis, ERP solutions, and mobile product development.</p>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>ramvyas6220@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 8107562302</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p>linkedin.com/in/yourprofile</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <form id="contactForm">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="text" placeholder="Subject" required>
+                        <textarea placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="card" style="margin-top:32px;">
-      <h3>Enterprise ERP Redesign & 2,500+ Store Rollout</h3>
-      <p><strong>Role:</strong> Functional Lead & UAT Owner</p>
-      <ul>
-        <li>98% defect detection rate during UAT</li>
-        <li>20% reduction in post-release issues</li>
-        <li>High adoption across enterprise operators</li>
-      </ul>
-      <span class="tag">ERP</span>
-      <span class="tag">UAT</span>
-      <span class="tag">Enterprise Scale</span>
-    </div>
-  </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3 style="color: white; margin-bottom: 10px;">Shriram Sharma</h3>
+                    <p style="color: #ccc;">Business Analyst specializing in ERP and mobile solutions for restaurant and retail industries.</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://linkedin.com" class="social-link" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fas fa-file-pdf"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Shriram Sharma. All rights reserved. | Business Analyst Portfolio</p>
+            </div>
+        </div>
+    </footer>
 
-  <!-- EXPERIENCE -->
-  <section>
-    <h2>Professional Experience</h2>
-    <div class="card">
-      <h3>Business Analyst — ANR Software Pvt. Ltd. (2020–Present)</h3>
-      <ul>
-        <li>Owned BRD/FRD, functional design, and delivery for ERP and mobile products</li>
-        <li>Led UAT, regression, and integration testing to improve release quality</li>
-        <li>Drove analytics initiatives using SQL and Power BI</li>
-        <li>Supported rollouts across 2,500+ restaurant locations</li>
-        <li>Improved app adoption and engagement through data-backed features</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- CERTIFICATIONS -->
-  <section>
-    <h2>Professional Certifications</h2>
-    <div class="card">
-      <ul>
-        <li>
-          <strong>Certification of Capability in Business Analysis (CCBA®)</strong><br>
-          International Institute of Business Analysis (IIBA) · Dec 2025
-        </li>
-        <li>
-          <strong>CBAP® Certification Training</strong><br>
-          CBAP preparation program – Simplilearn · Dec 2025
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section>
-    <h2>Education</h2>
-    <div class="card">
-      <h3>B.Tech — Computer Science & Engineering</h3>
-      <p>Amity University Rajasthan</p>
-    </div>
-  </section>
-
-  <footer>
-    © 2025 Shriram Sharma · Senior Business Analyst Portfolio
-  </footer>
-
-</div>
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        // Form submission handling
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            contactForm.reset();
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Add scroll effect to header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            }
+        });
+    </script>
 </body>
 </html>
