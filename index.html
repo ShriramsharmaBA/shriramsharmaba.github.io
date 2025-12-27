@@ -236,17 +236,25 @@
             text-align: center;
         }
         
+        .hero-actions {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 15px;
+        }
+
+        .hero-actions .btn {
+          min-width: 180px;
+          text-align: center;
+        }
+
+        
         .profile-img {
             width: 100%;
             max-width: 400px;
             border-radius: 20px;
             box-shadow: var(--shadow);
         }
-        
-        .hero-btns {
-            display: flex;
-            gap: 15px;
-        }
+
         
         .contact-info-bar {
             display: flex;
@@ -378,14 +386,7 @@
             position: relative;
             padding-left: 10px;
         }
-        
-        .achievement-list li:before {
-            content: "•";
-            color: var(--primary-color);
-            font-weight: bold;
-            position: absolute;
-            left: 0;
-        }
+
         
         .achievement-stats {
             display: flex;
@@ -630,6 +631,17 @@
                 font-size: 1.8rem;
             }
         }
+        @media (max-width: 480px) {
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+}
+
     </style>
 </head>
 <body>
